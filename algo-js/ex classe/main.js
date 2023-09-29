@@ -35,34 +35,34 @@ console.log(Xerneas)
 while(Yveltal.hp > 0 && Xerneas.hp > 0){
     if (Yveltal.isLucky() == true){
         degatsAXer = Yveltal.attackPokemon(Xerneas)
-        console.log(Xerneas.name, " possède ", Xerneas.hp," HP mais il a subi ", degatsAXer," dégats")
+        console.log(Xerneas.name, "possède", Xerneas.hp,"HP mais il a subi", degatsAXer,"dégats")
         Xerneas.hp -= degatsAXer
         if(Xerneas.hp < 0){
             Xerneas.hp = 0
         }
-        console.log("Il reste ", Xerneas.hp, "HP à ",Xerneas.name)
+        console.log("Il reste", Xerneas.hp, "HP à",Xerneas.name)
         if (Xerneas.hp <= 0){
-            console.log(Xerneas.name, " a été mis K.O !")
+            console.log(Xerneas.name, "a été mis K.O !")
             break
         }
         continue
     } else {
-        console.log("L'attaque de ",Yveltal.name," a échouée.")
+        console.log("L'attaque de",Yveltal.name,"a échouée.")
         if(Xerneas.isLucky() == true){
             degatsAYve = Xerneas.attackPokemon(Yveltal)
-            console.log(Yveltal.name, " possède ", Yveltal.hp," HP mais il a subi ", degatsAYve," dégats")
+            console.log(Yveltal.name, "possède", Yveltal.hp,"HP mais il a subi", degatsAYve,"dégats")
             Yveltal.hp -= degatsAYve
             if(Yveltal.hp < 0){
                 Yveltal.hp = 0
             }
-            console.log("Il reste ", Yveltal.hp, " HP à ",Yveltal.name)
+            console.log("Il reste", Yveltal.hp, "HP à",Yveltal.name)
             if (Yveltal.hp <= 0){
-                console.log(Yveltal.name, " a été mis K.O !")
+                console.log(Yveltal.name, "a été mis K.O !")
                 break
             }
             continue
         } else {
-            console.log("L'attaque de ",Xerneas.name," a échouée.")
+            console.log("L'attaque de",Xerneas.name,"a échouée.")
             continue
         }
     }
