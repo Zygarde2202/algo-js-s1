@@ -8,7 +8,7 @@ class Pokemon {
     }
     isLucky() {
         let luck = Math.random()
-        if(this.luck < luck ){
+        if(this.luck > luck ){
             return true
         } else {
             return false
